@@ -11,5 +11,16 @@ public class TreeNode {
         this.left = null;
         this.right = null;
     }
+
+    public TreeNode root;
+    public int size;
+
+    public int size() {
+        return size;
+    }
+
+    public boolean isEmpty() {
+        return size == 0;
+    }
 }
 

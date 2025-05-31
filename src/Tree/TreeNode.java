@@ -1,26 +1,19 @@
 package Tree;
 
-public class TreeNode {
-    public int val;              //root
-    public TreeNode left;        //left node
-    public TreeNode right;       //right node
+//node related
+public class TreeNode<E> {
+    public E e;
+    public TreeNode<E> left, right;
 
-    //create constructor
-    public TreeNode(int val) {
-        this.val = val;
+    //constructor
+    public TreeNode(E e) {
+        this.e = e;
         this.left = null;
         this.right = null;
     }
 
-    public TreeNode root;
-    public int size;
-
-    public int size() {
-        return size;
-    }
-
-    public boolean isEmpty() {
-        return size == 0;
+    //constructor without parameter
+    public TreeNode(){
+        this(null);
     }
 }
-

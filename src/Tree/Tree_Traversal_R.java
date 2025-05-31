@@ -2,7 +2,7 @@ package Tree;
 
 public class Tree_Traversal_R {
 
-    private static class TreeNode {
+    public static class TreeNode {
         public int val;
         public TreeNode left, right;
 
@@ -45,7 +45,7 @@ public class Tree_Traversal_R {
         TreeNode root = new TreeNode(28);
         TreeNode node1 = new TreeNode(16);
         TreeNode node2 = new TreeNode(30);
-        TreeNode node3 = new TreeNode(13);
+        TreeNode node3 = new TreeNode(12);
         TreeNode node4 = new TreeNode(22);
         TreeNode node5 = new TreeNode(29);
         TreeNode node6 = new TreeNode(42);

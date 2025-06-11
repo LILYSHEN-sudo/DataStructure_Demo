@@ -49,6 +49,12 @@ public class Array {
         }
         return data[index];
     }
+    public int getFirst() {
+        return get(0);
+    }
+    public int getLast() {
+        return get(size - 1);
+    }
 
     public void set(int index, int e) {
         if(index < 0 || index > data.length) {

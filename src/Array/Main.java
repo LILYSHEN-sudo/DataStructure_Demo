@@ -19,7 +19,7 @@ public class Main {
 //            System.out.println(scores[i]);
 //        }
 
-        Array arr = new Array(20);
+        Array_1 arr = new Array_1(20);
         for(int i = 0; i < 10; i++) {
             arr.addLast(i);
         }

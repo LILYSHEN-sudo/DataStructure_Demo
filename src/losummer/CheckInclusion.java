@@ -1,5 +1,9 @@
 package losummer;
 
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+
 public class CheckInclusion {
     public boolean checkAnagram(String s1, String s2) {
         int n = s1.length();
@@ -47,11 +51,53 @@ public class CheckInclusion {
         return false;
     }
 
+    public boolean checkInclusion(String s1, String s2) {
+        int m = s1.length();
+        int n = s2.length();
+        if(m > n) {
+            return false;
+        }
+        Map<Character, Integer> map1 = new HashMap<>();
+        Map<Character, Integer> map2 = new HashMap<>();
+        for(int i = 0; i < m; i++) {
+            char cur1 = s1.charAt(i);
+            char cur2 = s2.charAt(i);
+            map1.put(cur1, map1.getOrDefault(cur1, 0) + 1);
+            map2.put(cur2, map2.getOrDefault(cur2, 0) + 1);
+        }
+
+        if(map1.equals(map2)) {
+            return true;
+        }
+
+        int left = 0;
+        for(int right = m; right < n; right++) {
+            char curR = s2.charAt(right);
+            map2.put(curR, map2.getOrDefault(curR, 0) + 1);
+
+            char curL = s2.charAt(left);
+            map2.put(curL, map2.get(curL) - 1);
+
+            if(map2.get(curL) == 0) {
+                map2.remove(curL);
+            }
+            left++;
+
+            if(map1.equals(map2)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+
     public static void main(String[] args) {
         CheckInclusion ch = new CheckInclusion();
-        String s1 = "ab";
-        String s2 = "eidbaooo";
+        String s1 = "abc";
+        String s2 = "dcba";
         boolean res = ch.checkAnagram(s1, s2);
+        boolean res2 = ch.checkInclusion(s1,s2);
         System.out.println(res);
+        System.out.println(res2);
     }
 }

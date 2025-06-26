@@ -1,4 +1,4 @@
-package losummer;
+package Slidingwindow;
 
 import java.util.HashSet;
 

@@ -1,7 +1,6 @@
-package losummer;
+package Slidingwindow;
 
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.Map;
 
 public class CheckInclusion {
@@ -89,7 +88,6 @@ public class CheckInclusion {
         }
         return false;
     }
-
 
     public static void main(String[] args) {
         CheckInclusion ch = new CheckInclusion();

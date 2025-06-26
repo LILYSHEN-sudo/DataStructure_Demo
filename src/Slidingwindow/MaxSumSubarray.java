@@ -1,4 +1,4 @@
-package losummer;
+package Slidingwindow;
 
 public class MaxSumSubarray {
     public int maxiSub(int[] nums, int k) {

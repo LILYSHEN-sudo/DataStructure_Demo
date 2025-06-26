@@ -1,15 +1,15 @@
 package Array;
 
-public class Array_1 {
+public class Arraynongeneric {
     private int[] data;
     private int size;
 
-    public Array_1(int capacity) {
+    public Arraynongeneric(int capacity) {
         data = new int[capacity];
         size = 0;
     }
 
-    public Array_1() {
+    public Arraynongeneric() {
         data = new int[10]; //this(10)
     }
 

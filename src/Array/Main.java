@@ -19,7 +19,7 @@ public class Main {
 //            System.out.println(scores[i]);
 //        }
 
-        Array_1 arr = new Array_1(20);
+        Arraynongeneric arr = new Arraynongeneric(20);
         for(int i = 0; i < 10; i++) {
             arr.addLast(i);
         }

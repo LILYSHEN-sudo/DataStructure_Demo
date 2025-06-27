@@ -16,7 +16,6 @@ public class LoopQueue<E> implements Queue<E> {
     public LoopQueue() {
         this(10);
     }
-
     public int getCapacity() {
         return data.length - 1;
     }

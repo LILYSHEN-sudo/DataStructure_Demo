@@ -1,4 +1,4 @@
-package Array;
+package Stacks_Queues;
 
 //泛型
 public class Array<E> {
@@ -54,7 +54,7 @@ public class Array<E> {
         return data[index];
     }
     public E getLast() {
-         return get(size - 1);
+        return get(size - 1);
     }
 
     //set

@@ -56,6 +56,9 @@ public class Array<E> {
     public E getLast() {
         return get(size - 1);
     }
+    public E getFirst() {
+         return get(0);
+    }
 
     //set
     public E set(int index) {

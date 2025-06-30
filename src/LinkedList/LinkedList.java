@@ -6,13 +6,13 @@ public class LinkedList<E> {
         public E e;
         public Node next;
 
-        public Node(E e, Node next) {
-            this.e = e;
+        public Node(Node next, E e) {
             this.next = next;
+            this.e = e;
         }
 
         public Node(E e) {
-            this(e, null);
+            this(null, e);
         }
 
         public Node() {

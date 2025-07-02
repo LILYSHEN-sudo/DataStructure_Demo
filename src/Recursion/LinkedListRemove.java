@@ -89,16 +89,16 @@ public class LinkedListRemove<E> {
         System.out.println(head);
 
         LinkedListRemove link = new LinkedListRemove();
-        ListNode res1 = link.removeElements1(head, 3);
-        ListNode res2 = link.removeElements2(head, 3);
-        ListNode res3 = link.removeElements3(head, 3);
-        ListNode res4 = link.removeElements4(head, 3);
-        ListNode res5 = link.removeElements5(head, 3);
+//        ListNode res1 = link.removeElements1(head, 3);
+//        ListNode res2 = link.removeElements2(head, 3);
+//        ListNode res3 = link.removeElements3(head, 3);
+        ListNode res4 = link.removeElements4(head, 2);
+//        ListNode res5 = link.removeElements5(head, 3);
 
-        System.out.println(res1);
-        System.out.println(res2);
-        System.out.println(res3);
+//        System.out.println(res1);
+//        System.out.println(res2);
+//        System.out.println(res3);
         System.out.println(res4);
-        System.out.println(res5);
+//        System.out.println(res5);
     }
 }

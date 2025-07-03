@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Stack;
 
 public class InOrder {
+    //Method-1: Non-Recursion
     public List<Integer> inOrderNR(TreeNode root) {
         ArrayList<Integer> res = new ArrayList<>();
         if(root == null) {
@@ -25,6 +26,7 @@ public class InOrder {
         return res;
     }
 
+    //Method-2: Recursion
     public List<Integer> inOrderR(TreeNode root) {
         ArrayList<Integer> res = new ArrayList<>();
         if(root == null) {

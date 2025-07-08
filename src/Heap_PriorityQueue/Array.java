@@ -1,4 +1,4 @@
-package Array;
+package Heap_PriorityQueue;
 
 //泛型
 public class Array<E> {
@@ -122,6 +122,15 @@ public class Array<E> {
              newData[i] = data[i];
          }
          data = newData;
+    }
+
+    public void swap(int i, int j) {
+        if(i < 0 || i >= size || j < 0 ||j >= size) {
+            throw new IllegalArgumentException("Index is illegal");
+        }
+        E t = data[i];
+        data[i] = data[j];
+        data[j] = t;
     }
 
     //toString

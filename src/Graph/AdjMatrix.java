@@ -3,6 +3,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.io.File;
+import java.lang.String;
 
 //从文件中读取信息，并整理成邻接矩阵的形式
 public class AdjMatrix {
@@ -93,5 +94,11 @@ public class AdjMatrix {
     public static void main(String[] args) {
         AdjMatrix adjMatrix = new AdjMatrix("g.txt");
         System.out.println(adjMatrix);
+        System.out.println(adjMatrix.V());
+        System.out.println(adjMatrix.E());
+        System.out.println(adjMatrix.hasEdge(1,2));
+        System.out.println(adjMatrix.adj(1));
+        System.out.println(adjMatrix.degree(1));
+
     }
 }

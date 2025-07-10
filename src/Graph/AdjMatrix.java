@@ -99,6 +99,5 @@ public class AdjMatrix {
         System.out.println(adjMatrix.hasEdge(1,2));
         System.out.println(adjMatrix.adj(1));
         System.out.println(adjMatrix.degree(1));
-
     }
 }

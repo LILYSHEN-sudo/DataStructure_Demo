@@ -46,7 +46,7 @@ public class Graph {
         }
     }
 
-    private void validateVertex(int v) {
+    public void validateVertex(int v) {
         if(v < 0 || v >= V) {
             throw new IllegalArgumentException("Vertex" + v + "is invalid");
         }
@@ -96,7 +96,7 @@ public class Graph {
         System.out.println(graph.V());
         System.out.println(graph.E());
         System.out.println(graph.hasEdge(1,2));
-        System.out.println(graph.adj(1));
-        System.out.println(graph.degree(1));
+        System.out.println(graph.adj(0));
+        System.out.println(graph.degree(0));
     }
 }

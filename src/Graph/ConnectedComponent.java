@@ -33,6 +33,5 @@ public class ConnectedComponent {
         Graph g = new Graph("g.txt");
         ConnectedComponent cc = new ConnectedComponent(g);
         System.out.println(cc.count());
-
     }
 }

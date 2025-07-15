@@ -164,22 +164,42 @@ public class LinkedList<E> {
         return sb.toString();
     }
 
+    public Node insert(int index, E e) {
+        Node prev = dummyHead;
+
+        for(int i = 0; i < index; i++) {
+            if(prev.next == null) {
+                return dummyHead.next;
+            }
+            prev = prev.next;
+        }
+        Node newNode = new Node(e);
+        newNode.next = prev.next;
+        prev.next = newNode;
+        return dummyHead.next;
+    }
+
     public static void main(String[] args) {
         LinkedList<Integer> list = new LinkedList<Integer>();
-        for(int i = 0; i < 5; i++) {
+        for(int i = 1; i < 5; i++) {
             list.addLast(i);
             System.out.println(list);
         }
-        list.set(2, 100);
+//        list.set(2, 100);
+//        System.out.println(list);
+//        Boolean res = list.contains(10);
+//        System.out.println(res);
+//
+//        list.remove(1);
+//        System.out.println(list);
+//        list.remove(2);
+//        System.out.println(list);
+//        list.removeElement(100);
+//        System.out.println(list);
+        list.insert(4, 5);
         System.out.println(list);
-        Boolean res = list.contains(10);
-        System.out.println(res);
+        list.insert(7, 8);
+        System.out.println(list);
 
-        list.remove(1);
-        System.out.println(list);
-        list.remove(2);
-        System.out.println(list);
-        list.removeElement(100);
-        System.out.println(list);
     }
 }
